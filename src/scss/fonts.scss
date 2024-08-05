@@ -1,0 +1,22 @@
+$Ubuntu: (
+    'Regular',
+    400);
+
+@each $name, $weight in $Ubuntu {
+    @font-face {
+        font-family: 'Ubuntu';
+        src: url('../assets/fonts/Ubuntu-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
+$IBMPlexMono: (
+    'Medium',
+    500);
+
+@each $name, $weight in $IBMPlexMono {
+    @font-face {
+        font-family: 'IBMPlexMono';
+        src: url('../assets/fonts/$IBMPlexMono-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
