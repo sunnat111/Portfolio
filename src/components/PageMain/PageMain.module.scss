@@ -1,0 +1,110 @@
+.main {
+  margin-top: 64px;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+
+    &_center {
+      padding: 37px 37px 37px 24px;
+      /* White */
+      border: 4px solid rgb(255, 255, 255);
+      border-radius: 160px 0px 160px 0px;
+      box-shadow: -4px -4px 2px 0px rgb(18, 247, 214);
+      /* BG 1 */
+      background: rgb(41, 47, 54);
+      &_about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 24px;
+        img {
+          width: 96px;
+          height: 96px;
+          margin-bottom: 16px;
+          /* Brand 1 */
+          border: 3px solid rgb(18, 247, 214);
+          border-radius: 64px;
+          background: url(programmer-1653351_1280);
+        }
+        &_title {
+          /* Logo-M */
+          color: rgb(255, 255, 255);
+          font-size: 32px;
+          font-weight: 500;
+          text-transform: capitalize;
+        }
+        &_desc {
+          /* Code-M */
+          color: rgb(255, 255, 255);
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+
+      &_list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+        gap: 16px;
+        li {
+          display: flex;
+          gap: 17px;
+          a {
+            /* Code-M */
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            font-weight: 400;
+          }
+          p {
+            /* Code-M */
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+      &_lang {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 32px;
+        li {
+          padding: 0 8px 0 8px;
+          border-radius: 8px;
+          /* Brand 1 */
+          background: rgb(18, 247, 214);
+          p {
+            /* Code-M */
+            color: rgb(41, 47, 54);
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+      &_button {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        padding: 16px 32px;
+        border-radius: 32px;
+        /* White */
+        background: rgb(255, 255, 255);
+        &_text {
+          /* Button-U */
+          color: rgb(41, 47, 54);
+          font-size: 20px;
+          font-weight: 400;
+          text-transform: capitalize;
+        }
+      }
+    }
+    &_title {
+      /* BG text-U */
+      color: rgb(152, 250, 236);
+      font-size: 117px;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+  }
+}

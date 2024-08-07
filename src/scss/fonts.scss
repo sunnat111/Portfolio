@@ -20,3 +20,14 @@ $IBMPlexMono: (
         font-weight: $weight;
     }
 }
+$IBMPlexMono: (
+    'Regular',
+    400);
+
+@each $name, $weight in $IBMPlexMono {
+    @font-face {
+        font-family: 'IBMPlexMono';
+        src: url('../assets/fonts/$IBMPlexMono-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
