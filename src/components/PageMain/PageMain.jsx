@@ -6,7 +6,7 @@ import {
   linkIcon,
   locIcon,
   scaleIcon,
-  downloadIcon
+  downloadIcon,
 } from "../../utils/ImgExport";
 
 const PageMain = () => {
@@ -58,13 +58,43 @@ const PageMain = () => {
               </li>
             </ul>
             <button className={s.main__box_center_button}>
-              <a className={s.main__box_center_button_text}>Download CV</a>
+              <a href="" className={s.main__box_center_button_text}>
+                Download CV
+              </a>
               <img src={downloadIcon} alt="" />
             </button>
           </div>
+          <div className={s.main__box_bottom}>
+            <div className={s.main__box_bottom_left}>
+              <h1 className={s.main__box_bottom_left_title}>
+                 Hey <br /> I’m <span>Sunnat</span>
+                , <br /> Full-stack developer
+              </h1>
+              <p className={s.main__box_bottom_left_text}>
+                I help business grow by crafting amazing web experiences. If
+                you’re <br />looking for a developer that likes to get stuff done,
+              </p>
+              <a href="https://t.me/S200917">let’s talk <img src={emailIcon} alt="" /></a>
+            </div>
+            <div className={s.main__box_bottom_right}>
+              <ul className={s.main__box_bottom_right_list}>
+                <li>
+                  <span>2</span>
+                  <p>Programming <br /> Language</p>
+                </li>
+                <li>
+                  <span>3</span>
+                  <p>Development <br /> Tools</p>
+                </li>
+                <li>
+                  <span>3</span>
+                  <p>Years of <br /> Experience</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <div className={s.main__box_bottom}>wefwef</div>
     </div>
   );
 };

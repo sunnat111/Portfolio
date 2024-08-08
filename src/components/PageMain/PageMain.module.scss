@@ -1,10 +1,26 @@
+
+
+@keyframes main {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 .main {
   margin-top: 64px;
+  animation: slideIn 0.5s ease-out;
   &__box {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 64px;
+    margin-bottom: 128px;
 
     &_center {
       padding: 37px 37px 37px 24px;
@@ -96,6 +112,81 @@
           font-size: 20px;
           font-weight: 400;
           text-transform: capitalize;
+        }
+      }
+    }
+    &_bottom {
+      display: flex;
+      gap: 70px;
+      &_left {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        a {
+          /* H2-M */
+          color: rgb(18, 247, 214);
+          font-size: 32px;
+          font-weight: 500;
+          text-transform: capitalize;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        &_text {
+          /* Para-M */
+          color: rgb(255, 255, 255);
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        &_title {
+          /* H1-U */
+          color: rgb(255, 255, 255);
+          font-size: 64px;
+          font-weight: 400;
+          span {
+            /* Code-M */
+            color: rgb(152, 250, 236);
+            font-size: 64px;
+            font-weight: 400;
+          }
+        }
+      }
+      &_right {
+        &_list {
+          display: flex;
+          flex-direction: column;
+          gap: 48px;
+          border-radius: 80px;
+          box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+          /* BG 2 */
+          background: rgb(26, 30, 35);
+          padding: 48px 32px 48px 32px;
+          li {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            p{
+              /* Para-M */
+              color: rgb(255, 255, 255);
+              font-size: 16px;
+              font-weight: 400;
+              transition: 0.3s;
+            }
+            p:hover {
+              color: aqua;
+            }
+            span {
+              /* Number-M */
+              color: rgb(18, 247, 214);
+              font-size: 48px;
+              font-weight: 500;
+              text-transform: capitalize;
+            }
+          }
         }
       }
     }
