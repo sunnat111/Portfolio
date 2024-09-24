@@ -10,7 +10,6 @@ import Header from "../../components/Header/Header";
 const All = () => {
   return (
     <>
-      <Header />
       <PageMain />
       <Aboutme />
       <Skills />

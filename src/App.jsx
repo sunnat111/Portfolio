@@ -6,15 +6,19 @@ import All from "./pages/All/All";
 import Contacts from "./pages/Contacts/Contacts";
 import "./scss/main.scss";
 import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
+    <Header/>
        <Routes>
         <Route path="/portfolio/" element={<All/>} />
         <Route path="/portfolio/about" element={<Aboutme/>} />
         <Route path="/portfolio/skills" element={<Skills/>} />
       </Routes>
+      <Footer/>
     </>
   );
 }
