@@ -1,0 +1,222 @@
+.skill {
+  background: rgb(41, 47, 54);
+  padding: 128px 0 128px 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  &__logo {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 350px;
+    margin-bottom: 86px;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 64px;
+    h2 {
+      /* H1-U */
+      color: rgb(18, 247, 214);
+      font-size: 64px;
+      font-weight: 400;
+      text-transform: capitalize;
+      border-bottom: 2px solid rgb(18, 247, 214);
+    }
+    p {
+      /* Para-M */
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 128px;
+    padding: 0 120px 0 120px;
+    &_left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 19px 30px 16px 30px;
+      border-radius: 8px 8px 8px 8px;
+      /* Brand 2 */
+      background: rgb(152, 250, 236);
+      transition: transform 0.5s ease;
+      a {
+        /* Menu-M */
+        color: rgb(41, 47, 54);
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: capitalize;
+      }
+
+      p {
+        /* Para-M */
+        color: rgb(67, 69, 77);
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+
+    &_left:hover {
+      transform: scale(1.1);
+    }
+    &_right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 19px 30px 16px 30px;
+      border-radius: 8px 8px 8px 8px;
+      /* Brand 2 */
+      background: rgb(152, 250, 236);
+      transition: transform 0.5s ease;
+      a {
+        /* Menu-M */
+        color: rgb(41, 47, 54);
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: capitalize;
+      }
+
+      p {
+        /* Para-M */
+        color: rgb(67, 69, 77);
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+    &_right:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 128px;
+    &_html {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      &_img {
+        display: flex;
+        align-items: center;
+        border-radius: 80px;
+        padding: 40px;
+        /* Html */
+        background: rgb(229, 79, 38);
+      }
+      a {
+        /* H2-M */
+        color: rgb(229, 79, 38);
+        font-size: 32px;
+        font-weight: 500;
+        text-transform: capitalize;
+        transition: transform 0.5s ease;
+      }
+      a:hover {
+        transform: scale(1.1);
+      }
+    }
+    &_css {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      &_img {
+        display: flex;
+        align-items: center;
+        border-radius: 80px;
+        padding: 40px;
+        /* CSS */
+        background: rgb(12, 115, 184);
+      }
+      a {
+        /* H2-M */
+        color: rgb(12, 115, 184);
+        font-size: 32px;
+        font-weight: 500;
+        text-transform: capitalize;
+        transition: transform 0.5s ease;
+      }
+      a:hover {
+        transform: scale(1.1);
+      }
+    }
+    &_js {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      &_img {
+        display: flex;
+        align-items: center;
+        border-radius: 80px;
+        padding: 40px;
+        /* JS */
+        background: rgb(231, 160, 32);
+      }
+      a {
+        /* H2-M */
+        color: rgb(231, 160, 32);
+        font-size: 32px;
+        font-weight: 500;
+        text-transform: capitalize;
+        transition: transform 0.5s ease;
+      }
+      a:hover {
+        transform: scale(1.1);
+      }
+    }
+    &_react {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      &_img {
+        display: flex;
+        align-items: center;
+        border-radius: 80px;
+        padding: 40px;
+        /* React */
+        background: rgb(40, 169, 224);
+      }
+      a {
+        /* H2-M */
+        color: rgb(40, 169, 224);
+        font-size: 32px;
+        font-weight: 500;
+        text-transform: capitalize;
+        transition: transform 0.5s ease;
+      }
+      a:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

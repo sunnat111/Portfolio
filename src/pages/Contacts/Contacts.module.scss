@@ -1,0 +1,133 @@
+.contacts {
+  /* BG 1 */
+  background: rgb(41, 47, 54);
+  padding: 128px 0 128px 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 102px;
+    &_top {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      gap: 64px;
+      &_icon {
+        background: rgb(41, 47, 54);
+      }
+      &_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        h2 {
+          /* H1-U */
+          color: rgb(18, 247, 214);
+          font-size: 64px;
+          font-weight: 400;
+          text-transform: capitalize;
+          /* Brand 1 */
+          border-bottom: 2px solid rgb(18, 247, 214);
+        }
+
+        p {
+          /* Para-M */
+          color: rgb(255, 255, 255);
+          font-size: 16px;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+    }
+    &_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 64px;
+      &_top {
+        box-sizing: border-box;
+        /* Brand 1 */
+        border: 2px solid rgb(18, 247, 214);
+        border-radius: 32px 0px 32px 0px;
+        padding: 16px 40px 16px 40px;
+        background: rgb(41, 47, 54);
+        transition: transform 0.5s ease;
+        a {
+          /* Logo-M */
+          color: rgb(18, 247, 214);
+          font-size: 32px;
+          font-weight: 500;
+          text-transform: capitalize;
+        }
+      }
+      &_top:hover {
+        transform: scale(1.1);
+      }
+
+      &_main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 128px;
+        grid-auto-columns: 500px;
+        label {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          /* Para-U */
+          color: rgb(18, 247, 214);
+          font-size: 16px;
+          font-weight: 300;
+          text-align: left;
+          width: 496px;
+          input {
+            color: #fff;
+            background: rgb(41, 47, 54);
+            /* Brand 2 */
+            border-bottom: 1px solid rgb(152, 250, 236);
+            padding-bottom: 8px;
+          }
+          ::placeholder {
+            /* Para-U */
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 300;
+            text-align: left;
+          }
+        }
+      }
+
+      &_bottom {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        border-radius: 32px;
+        /* Brand 1 */
+        background: rgb(18, 247, 214);
+        padding: 16px 32px 16px 32px;
+
+        a {
+          /* Button-U */
+          color: rgb(41, 47, 54);
+          font-size: 20px;
+          font-weight: 400;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

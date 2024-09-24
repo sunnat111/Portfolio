@@ -1,0 +1,59 @@
+.works {
+  background: rgb(26, 30, 35);
+  padding: 128px 0 128px 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    &_top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 64px;
+      &_title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        h2 {
+          /* H1-U */
+          color: rgb(18, 247, 214);
+          font-size: 64px;
+          font-weight: 400;
+          text-transform: capitalize;
+          border-bottom: 2px solid rgb(18, 247, 214);
+        }
+        p {
+          /* Para-M */
+          color: rgb(255, 255, 255);
+          font-size: 16px;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+      &_scroll {
+        background: rgb(26, 30, 35);
+      }
+    }
+    &_bottom {
+      &_link {
+        position: absolute;
+        top: 202px;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,13 @@
+$IBMPlexMono: (
+    'Regular',
+    400),
+    ('Medium', 500
+);
+
+@each $name, $weight in $IBMPlexMono {
+    @font-face {
+        font-family: 'IBM Plex Mono';
+        src: url('../assets/fonts/IBMPlexMono-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}   

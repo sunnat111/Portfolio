@@ -1,0 +1,56 @@
+.footer {
+  padding: 16px 0 16px 0;
+  /* BG 2 */
+  background: rgb(26, 30, 35);
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 247px;
+    align-items: center;
+    &_one {
+      width: 310px;
+      p {
+        /* Para-U */
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 300;
+        text-align: left;
+      }
+    }
+    &_two {
+      display: flex;
+      gap: 32px;
+      width: 280px;
+      p {
+        /* Para-U */
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+      }
+    }
+    &_three {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+    &_four {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      p {
+        /* Para-U */
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+      }
+      a {
+        color: rgb(18, 247, 214);
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
