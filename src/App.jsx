@@ -5,12 +5,18 @@ import Works from "./pages/Works/Works";
 import All from "./pages/All/All";
 import Contacts from "./pages/Contacts/Contacts";
 import "./scss/main.scss";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  return <>
-  
-    <All/>
-  </>;
+  return (
+    <>
+       <Routes>
+        <Route path="/portfolio/" element={<All/>} />
+        <Route path="/portfolio/about" element={<Aboutme/>} />
+        <Route path="/portfolio/skills" element={<Skills/>} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
