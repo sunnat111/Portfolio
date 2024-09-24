@@ -15,7 +15,6 @@ const All = () => {
       <Skills />
       <Works />
       <Contacts />
-      <Footer />
     </>
   );
 };
