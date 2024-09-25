@@ -16,9 +16,10 @@ const Aboutme = () => {
                 <h2>About me</h2>
               </div>
               <div className={s.about__box_bottom_left_bottom}>
-                <p>
-                  <span>Hello!</span> <br /> My name is Sunnat and I specialize
-                  in web developement that utilizes HTML, CSS, JS, <br />
+                <span>Hello!</span>
+                <p >
+                  My name is Sunnat and I specialize in web developement
+                  that utilizes HTML, CSS, JS, <br />
                   and REACT etc. <br />
                   I am a highly motivated individual and eternal optimist
                   dedicated to writing clear, <br /> concise, robust code that

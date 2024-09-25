@@ -20,7 +20,7 @@ const Works = () => {
           </div>
             <div className={s.works__box_bottom}>
               <h1></h1>
-            </div>;
+            </div>
         </div>
       </div>
     </div>
