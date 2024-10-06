@@ -1,5 +1,5 @@
 Hello!! Everyone
 
-This is the website of weather which was created by using React
+This is a PORTFOLIO website created using React.
 
 Link to my  <a href="https://sunnat111.github.io/portfolio/">project</a>
